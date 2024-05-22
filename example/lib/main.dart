@@ -166,6 +166,7 @@ class _MyAppState extends State<MyApp> {
       ),
       animated: true,
     );
+    _flutterCarplay.forceUpdateRootTemplate();
 
     _flutterCarplay.addListenerOnConnectionChange(onCarplayConnectionChange);
   }
@@ -363,8 +364,8 @@ class _MyAppState extends State<MyApp> {
               }),
         ],
             informationItems: [
-              CPInformationItem(title: "Item title 1", detail: "detail 1"),
-              CPInformationItem(title: "Item title 2", detail: "detail 2"),
+          CPInformationItem(title: "Item title 1", detail: "detail 1"),
+          CPInformationItem(title: "Item title 2", detail: "detail 2"),
         ]));
   }
 
